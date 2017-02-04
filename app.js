@@ -69,6 +69,18 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
+function sumArray(arr) {
+   var sum = 0;
+   var str;
+   for (var i = 0; i<arr.length; i++){
+      sum += arr[i];
+   }
+   console.log('2,3,4 was passed in as an array of numbers, and '+ sum + ' is their sum.');
+   console.log([sum, arr[0]+',' + arr[1]+','+arr[2]+' was passed in as an array of numbers, and '+sum+' is their sum']);
+   return ([sum, arr[0]+',' + arr[1]+','+arr[2]+' was passed in as an array of numbers, and '+sum+' is their sum']);
+}
+
+sumArray([2, 3, 4]);
 //testArray = [2,3,4];
 
 // Here is the test for sumArray(); uncomment it to run it
