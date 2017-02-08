@@ -70,7 +70,6 @@ Test this function by hand in the console to get it working, and when you think 
 // Returns the sum of 3 numbers
 function sumArray(arr) {
   var sum = 0;
-  var str;
   for (var i = 0; i<arr.length; i++){
     sum += arr[i];
   }
